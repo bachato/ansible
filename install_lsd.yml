@@ -7,13 +7,33 @@
   - name: update repository index
     apt:
       update_cache: yes
+    when: ansible_distribution in ["debian", "ubuntu"]
 
   - name: install lsd package
     apt:
       name: lsd
       state: latest
+    when: ansible_distribution in ["debian", "ubuntu"]
 
   - name: install tldr package
     apt:
       name: tldr
       state: latest
+    when: ansible_distribution in ["debian", "ubuntu"]
+
+  - name: update repository index
+    apt:
+      update_cache: yes
+    when: ansible_distribution in ["centos"]
+
+  - name: install lsd package
+    apt:
+      name: lsd
+      state: latest
+    when: ansible_distribution in ["centos"]
+
+  - name: install tldr package
+    apt:
+      name: tldr
+      state: latest
+    when: ansible_distribution in ["centos"]
