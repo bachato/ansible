@@ -1,11 +1,14 @@
+[proxmox]
 pve1
 pve2
 pve3
+[containers]
 omada
 unifi
 dashy
 pilert
 traefik
+[k3s]
 k3s-admin
 k3s-01
 k3s-02
