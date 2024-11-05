@@ -40,3 +40,15 @@ then use GNU stow to create symlinks
 $ stow .
 ```
 Video: https://www.youtube.com/watch?v=y6XCebnB9gs
+
+### Misc: these are apps I install on all hosts I use.
+tree thewhat tldr nano nvim rclone/rsync spell unzip wget curl zsh xsel eza fastfetch bat kitty
+
+Arch:
+```
+pacman -S <app> 
+```
+Debian/Ubuntu:
+```
+apt install <app> 
+```
